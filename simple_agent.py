@@ -10,6 +10,9 @@ from docx import Document as DocxDocument
 from docx.shared import Pt
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 
+from langsmith import traceable
+from langsmith.wrappers import wrap_openai
+
 load_dotenv()
 
 INPUT_FOLDER = os.path.join(os.path.dirname(__file__), "Input")
