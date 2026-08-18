@@ -1,0 +1,2 @@
+This is the content of document 1.
+It has multiple lines.

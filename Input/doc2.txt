@@ -1,0 +1,2 @@
+This is the content of document 2.
+Another sample document.
