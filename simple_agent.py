@@ -15,6 +15,10 @@ from langsmith.wrappers import wrap_openai
 
 load_dotenv()
 
+os.environ["LANGCHAIN_TRACING_V2"] = "true"
+os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGSMITH_API_KEY", "")
+os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGSMITH_PROJECT", "default")
+
 INPUT_FOLDER = os.path.join(os.path.dirname(__file__), "Input")
 
 class Document(TypedDict):
