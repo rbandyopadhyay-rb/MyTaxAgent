@@ -137,7 +137,7 @@ def node_3(state: State) -> State:
     print(f"  Saved: {output_path}")
     return state
 
-
+# building the graph
 builder = StateGraph(State)
 
 builder.add_node("node_1", node_1)
